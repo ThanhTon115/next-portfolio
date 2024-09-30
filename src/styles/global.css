@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,19 @@
 :root {
   --background: #ffffff;
   --foreground: #121331;
+
+  --secondary: #2e2e39;
+  --label: #a4a4a9;
+
+  --size-sm: 12px;
+  --size-md: 16px;
+  --size-lg: 24px;
+  --size-xl: 36px;
+
+  scroll-behavior: smooth;
+  @media screen and (max-width: 640px) {
+    font-size: 13px;
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -17,7 +32,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {

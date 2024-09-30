@@ -1,7 +1,21 @@
-import Header from "@/components/Header";
-import Head from "next/head";
-import Image from "next/image";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Home from "@/components/Home";
+import Technical from "@/components/Technical";
+import dynamic from "next/dynamic";
 
-export default function Home() {
-  return <></>;
+const Qualification = dynamic(() => import("@/components/Qualification"), {
+  ssr: false,
+});
+
+export default function App() {
+  return (
+    <main className="m-auto md:max-w-[80%] px-8 overflow-x-hidden">
+      <Home />
+      <About />
+      <Technical />
+      <Qualification />
+      <Contact />
+    </main>
+  );
 }

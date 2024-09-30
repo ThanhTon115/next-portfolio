@@ -68,11 +68,6 @@
     }
   }
 }
-.nav__item {
-  &:hover {
-    font-weight: bold;
-  }
-}
 .nav__list {
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
   @media screen and (max-width: 640px) {
@@ -143,6 +138,40 @@
   &:hover > .hey {
     opacity: 1;
     animation: rotate 1s infinite;
+  }
+}
+
+.home {
+  &__data {
+    // order: 2;
+  }
+  &__social {
+    // order: 0;
+  }
+  &__img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+  }
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+}
+
+.about {
+  &__img {
+    border-radius: 24px;
   }
 }
 
