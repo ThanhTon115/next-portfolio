@@ -21,6 +21,28 @@ import {
   wow,
   xcore,
 } from "@image/index";
+import {
+  CommissionReport,
+  CreateOrder,
+  Dashboard,
+  ExportRequest,
+  ImportHistory,
+  ImportRequest,
+  InternalConfig,
+  MasterData,
+  LotList,
+  ImportExportHistory,
+  RevenueReport,
+  SaleReport,
+  StockChangeReport,
+  SystemReport,
+  TransferRequest,
+  Login,
+  AccountManagement,
+  CustomerManagement,
+  OrderManagment,
+} from "@image/warehouse-management";
+import { StaticImageData } from "next/image";
 export const MenuItems = [
   {
     path: "#home",
@@ -120,7 +142,7 @@ export const technologies = [
 export type ExperienceType = {
   projectName: string;
   companyName?: string;
-  icon: any;
+  icon?: any;
   date: string;
   description: string;
   role: string;
@@ -128,12 +150,12 @@ export type ExperienceType = {
   teches: string;
   responsibilities: string;
   accomplishments: string;
+  images?: { imageData: StaticImageData; alt: string }[];
 };
 export const experiences: ExperienceType[] = [
   {
     projectName: "Warehouse management",
     companyName: "Freelance",
-    icon: xcore,
     date: "19/02/2024 - now",
     description:
       "A responsive web that help to manage a pharmacy warehouse and sales counter.",
@@ -144,6 +166,27 @@ export const experiences: ExperienceType[] = [
       "Analyzed requirements, wrote documentation, built front-end source code, handled UI, and integrated APIs.",
     accomplishments:
       " Deployed version 1 of a responsive web application for managing a medicine warehouse and sales counter.",
+    images: [
+      { imageData: Login, alt: "Login" },
+      { imageData: AccountManagement, alt: "Account management" },
+      { imageData: CustomerManagement, alt: "Customer management" },
+      { imageData: OrderManagment, alt: "Order management" },
+      { imageData: CreateOrder, alt: "Create order" },
+      { imageData: Dashboard, alt: "Dashboard" },
+      { imageData: ImportRequest, alt: "Import request" },
+      { imageData: ExportRequest, alt: "Export request" },
+      { imageData: TransferRequest, alt: "Transfer request" },
+      { imageData: ImportHistory, alt: "Import history" },
+      { imageData: ImportExportHistory, alt: "Import/export hisstory" },
+      { imageData: LotList, alt: "Lot list" },
+      { imageData: InternalConfig, alt: "Internal configuẩtion" },
+      { imageData: MasterData, alt: "Master data configuaration" },
+      { imageData: SystemReport, alt: "System configuration" },
+      { imageData: CommissionReport, alt: "Commission report" },
+      { imageData: RevenueReport, alt: "Revenue report" },
+      { imageData: SaleReport, alt: "Sales report" },
+      { imageData: StockChangeReport, alt: "Stock change report" },
+    ],
   },
   {
     projectName: "DIVA ERP",

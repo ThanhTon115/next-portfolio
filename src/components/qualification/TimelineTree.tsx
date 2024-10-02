@@ -7,6 +7,7 @@ import Lottie from "lottie-react";
 import { CloseIcon } from "@image/index";
 import { useState } from "react";
 import Image from "next/image";
+import { ProjectImages } from "./ProjectImages";
 
 export function TimelineTree({ className }: { className?: string }) {
   const [popupValue, setPopupValue] = useState<ExperienceType | null>();
@@ -98,6 +99,12 @@ export function TimelineTree({ className }: { className?: string }) {
               {popupValue?.accomplishments}
             </li>
           </ul>
+          {popupValue?.images && (
+            <>
+              <p className="my-4 text-[--label] font-bold">Demo image:</p>
+              <ProjectImages images={popupValue.images} />
+            </>
+          )}
         </div>
       </div>
     </>
