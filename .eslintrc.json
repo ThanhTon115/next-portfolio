@@ -3,9 +3,24 @@
     "next/core-web-vitals",
     "next/typescript",
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
+  "plugins": ["prettier"],
   "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "arrowParens": "always",
+        "semi": false,
+        "trailingComma": "none",
+        "tabWidth": 2,
+        "endOfLine": "auto",
+        "useTabs": false,
+        "printWidth": 120
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
