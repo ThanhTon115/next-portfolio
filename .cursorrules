@@ -1,0 +1,68 @@
+# Commit Message Rules
+
+When generating commit messages, follow these rules:
+
+## Format
+
+```
+<type>(<scope>): <subject>
+
+<body>
+```
+
+## Type Rules
+
+- `feat`: New features
+- `fix`: Bug fixes
+- `refactor`: Code refactoring
+- `docs`: Documentation changes
+- `style`: Code style changes
+- `test`: Test changes
+- `chore`: Build/tooling changes
+
+## Scope Rules
+
+- Extract scope from branch name (part after `/`)
+- Use kebab-case
+- Examples: `configuration`, `employee-management`, `auth`
+
+## Subject Rules
+
+- Start with lowercase
+- No period at the end
+- Max 50 characters
+- Use imperative mood
+
+## Body Rules
+
+- List specific changes
+- Use bullet points
+- Group related changes
+- Include file names when relevant
+
+## Branch Name Integration
+
+- Always include branch name in commit message
+- Format: `<branch-name>: <description>`
+- Extract feature name from branch for scope
+
+## Examples
+
+```
+feat/configuration-jd: add recruitment description update functionality
+
+- Add new update component for recruitment descriptions
+- Refactor hooks structure for better organization
+- Add action buttons for table operations
+- Update existing components and types
+```
+
+## AI Assistant Instructions
+
+When user asks for commit messages:
+
+1. Get current branch name
+2. Analyze staged changes
+3. Generate appropriate type and scope
+4. Create descriptive subject and body
+5. Follow the format above

@@ -18,9 +18,20 @@ export default function Home() {
           Frontend Developer
         </h3>
         <p className="home__description text-[var(--label)] text-justify">
-          I'm a Frontend Developer in Ho Chi Minh City, i'm a quick learner and
-          ready to learn new technologies and capable of working effectively
-          under pressure.
+          I am a Frontend Developer with 4+ years of experience building
+          scalable web applications, currently focusing on React and Next.js. I
+          also have a solid background in Vue.js.
+        </p>
+        <p className="home__description text-[var(--label)] text-justify">
+          In my recent work, I contributed to a shared Design System, built
+          reusable UI components, and applied scalable frontend architecture to
+          support complex, data-driven applications. I also implemented a
+          WebSocket-based solution for real-time features.
+        </p>
+        <p className="home__description text-[var(--label)] text-justify">
+          I enjoy working in product environments where performance,
+          maintainability, and user experience are key. I am eager to contribute
+          my skills and continue growing within the React and Next.js ecosystem.
         </p>
         <a
           href="#contact"
