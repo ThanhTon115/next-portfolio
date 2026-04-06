@@ -7,12 +7,6 @@ import Lottie from "lottie-react";
 import { CloseIcon } from "@image/index";
 import { useState } from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-
-const ProjectImages = dynamic(
-  () => import("./ProjectImages")?.then((mod) => mod.ProjectImages),
-  { ssr: false }
-);
 
 export function TimelineTree({ className }: { className?: string }) {
   const [popupValue, setPopupValue] = useState<ExperienceType | null>();
