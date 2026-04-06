@@ -82,7 +82,8 @@
     padding: 0 1rem;
     transition: 0.3s;
     &-content {
-      width: 500px;
+      width: 50dvw;
+      min-width: 1024px;
       position: relative;
       background-color: white;
       padding: 4.5rem 2.5rem 2.5rem;

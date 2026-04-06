@@ -80,36 +80,36 @@ export function TimelineTree({ className }: { className?: string }) {
             <p className="max-sm:text-[10px] text-sm">{popupValue?.date}</p>
           </div>
           <ul>
-            <li className="mt-4 text-[--label]">
+            <li className="mt-4 text-[--foreground]">
               <span className="font-bold">Description:</span>{" "}
               {popupValue?.description}
             </li>
-            <li className="mt-4 text-[--label]">
+            <li className="mt-4 text-[--foreground]">
               <span className="font-bold">Role:</span> {popupValue?.role}
             </li>
-            <li className="mt-4 text-[--label]">
+            <li className="mt-4 text-[--foreground]">
               <span className="font-bold">Team size:</span>{" "}
               {popupValue?.teamSize}
             </li>
-            <li className="mt-4 text-[--label]">
+            <li className="mt-4 text-[--foreground]">
               <span className="font-bold">Techs/Tools:</span>{" "}
               {popupValue?.teches}
             </li>
-            <li className="mt-4 text-[--label]">
+            <li className="mt-4 text-[--foreground]">
               <span className="font-bold">Responsibilities:</span>{" "}
               {popupValue?.responsibilities}
             </li>
-            <li className="mt-4 text-[--label]">
+            <li className="mt-4 text-[--foreground]">
               <span className="font-bold">Accomplishments:</span>{" "}
               {popupValue?.accomplishments}
             </li>
           </ul>
-          {popupValue?.images && (
+          {/* {popupValue?.images && (
             <>
               <p className="my-4 text-[--label] font-bold">Demo image:</p>
               <ProjectImages images={popupValue.images} />
             </>
-          )}
+          )} */}
         </div>
       </div>
     </>
