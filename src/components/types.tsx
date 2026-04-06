@@ -6,42 +6,17 @@ import MessageIcon from "@image/message.json";
 import {
   css,
   diva,
-  edu,
   figma,
   git,
   html,
   javascript,
   nextjs,
   reactjs,
-  redux,
   tailwind,
   threejs,
   typescript,
   vuejs,
-  wow,
-  xcore,
 } from "@image/index";
-import {
-  CommissionReport,
-  CreateOrder,
-  Dashboard,
-  ExportRequest,
-  ImportHistory,
-  ImportRequest,
-  InternalConfig,
-  MasterData,
-  LotList,
-  ImportExportHistory,
-  RevenueReport,
-  SaleReport,
-  StockChangeReport,
-  SystemReport,
-  TransferRequest,
-  Login,
-  AccountManagement,
-  CustomerManagement,
-  OrderManagment,
-} from "@image/warehouse-management";
 import { StaticImageData } from "next/image";
 import React from "react";
 export const MenuItems = [
