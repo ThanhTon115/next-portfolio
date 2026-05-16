@@ -40,7 +40,9 @@ export function TimelineTree({ className }: { className?: string }) {
           !!popupValue ? "visible" : "invisible opacity-0"
         }`}
       >
-        <div className="experience__modal-content">
+        <div className="experience__modal-content " 
+        // style={{ scrollbarWidth: "thin", scrollbarColor: "#e1e1eb transparent" }}
+        >
           <Lottie
             onClick={() => {
               setPopupValue(null);
@@ -73,7 +75,7 @@ export function TimelineTree({ className }: { className?: string }) {
             </svg>
             <p className="max-sm:text-[10px] text-sm">{popupValue?.date}</p>
           </div>
-          <ul>
+          <ul className="max-h-[70vh] overflow-y-auto">
             <li className="mt-4 text-[--foreground]">
               <span className="font-bold">Description:</span>{" "}
               {popupValue?.description}

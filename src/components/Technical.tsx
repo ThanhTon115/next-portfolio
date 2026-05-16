@@ -13,7 +13,7 @@ export default function Technical() {
       <h3 className="text-[--label] text-center w-full">My skills</h3>
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-16 max-w-[1024px] mx-auto">
         {technologies.map((technology) => (
-          <div className="w-28 h-28 text-center" key={technology.name}>
+          <div className="w-36 h-28 text-center" key={technology.name}>
             <BallCanvas icon={technology.icon?.src} />
             <p className="text-[--label]">{technology.name}</p>
           </div>
