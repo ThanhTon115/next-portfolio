@@ -6,7 +6,7 @@ export function Education({ className }: { className?: string }) {
           Major: Information Technology
         </h3>
         <p className="mb-2">HCMC University of technology and education </p>
-        <span>GPA: 3.15/4</span>
+        {/* <span>GPA: 3.15/4</span> */}
         <div className="mt-2 flex gap-2 justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -119,6 +119,7 @@ export default function Contact() {
         </label>
 
         <button
+          disabled={!form.email || !form.message}
           type="submit"
           className="bg-[var(--secondary)] text-white rounded-full px-6 py-4 w-fit flex gap-2 items-center"
         >
