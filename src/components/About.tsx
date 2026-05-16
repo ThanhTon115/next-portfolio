@@ -2,7 +2,7 @@ import Image from "next/image";
 import Avatar from "@image/avatar.jpg";
 
 const CvUrl =
-  "https://drive.google.com/file/d/15A1eWRg3iAvTJ1LwAItPhFeIgcEMuV-1/view?usp=sharing";
+  "https://drive.google.com/file/d/12Aw979O118oyRCsFlgPRMMvgS53pObsY/view";
 export default function About() {
   return (
     <section id="about" className="pt-[74px]">
