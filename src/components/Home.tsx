@@ -12,27 +12,27 @@ export default function Home() {
       <div className="home__social flex flex-col gap-6 justify-center order-1">
         <Social />
       </div>
-      <div className="home__data flex flex-col gap-4 justify-center lg:max-w-[50%] max-lg:w-full order-2 max-lg:order-3">
+      <ul className="home__data flex flex-col gap-4 justify-center lg:max-w-[50%] max-lg:w-full order-2 max-lg:order-3">
         <h1 className="text-4xl font-bold">Thanh Toan</h1>
         <h3 className="home_subtitle text-[var(--secondary)]">
           Frontend Developer
         </h3>
-        <p className="home__description text-[var(--label)] text-justify">
+        <li className="home__description text-[var(--label)] text-justify">
           I am a Frontend Developer with 4+ years of experience building
           scalable web applications, currently focusing on React and Next.js. I
           also have a solid background in Vue.js.
-        </p>
-        <p className="home__description text-[var(--label)] text-justify">
+        </li>
+        <li className="home__description text-[var(--label)] text-justify">
           In my recent work, I contributed to a shared Design System, built
           reusable UI components, and applied scalable frontend architecture to
           support complex, data-driven applications. I also implemented a
           WebSocket-based solution for real-time features.
-        </p>
-        <p className="home__description text-[var(--label)] text-justify">
+        </li>
+        <li className="home__description text-[var(--label)] text-justify">
           I enjoy working in product environments where performance,
           maintainability, and user experience are key. I am eager to contribute
           my skills and continue growing within the React and Next.js ecosystem.
-        </p>
+        </li>
         <a
           href="#contact"
           className="bg-[var(--secondary)] text-white rounded-full px-6 py-4 w-fit flex gap-2 items-center"
@@ -61,7 +61,7 @@ export default function Home() {
           </svg>
           Contact me
         </a>
-      </div>
+      </ul>
       <Image
         className="home__img my-auto max-w-[300px] max-sm:!w-[50%] order-3 max-lg:order-2"
         src={Avatar}

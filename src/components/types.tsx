@@ -54,12 +54,12 @@ export const FooterItems = [
     iconPath: AboutIcon,
   },
   {
-    path: "#experience",
-    title: "Experience",
+    path: "#qualification",
+    title: "Qualification",
     iconPath: WorkIcon,
   },
   {
-    path: "#technical",
+    path: "#skills",
     title: "Technical skills",
     iconPath: ExperienceIcon,
   },
@@ -98,14 +98,14 @@ export const technologies = [
     name: "TypeScript",
     icon: typescript,
   },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "JavaScript",
+  //   icon: javascript,
+  // },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
@@ -128,11 +128,34 @@ export type ExperienceType = {
   accomplishments: React.ReactNode;
   images?: { imageData: StaticImageData; alt: string }[];
 };
+
+const _247_responsibilities = [
+  "Contributed to building and maintaining a shared Design System using Next.js and shadcn/ui by developing reusable base components, shared layout patterns, and UI variants to standardize frontend implementation across HRM, TMS, and CRM domains.",
+  "Developed complex HRM-focused management interfaces including organization charts using React Flow, tree selectors, draggable lists, workflow-related modules, and large-scale form-driven systems tailored for internal operational management.",
+  "Participated in improving frontend architecture by transitioning legacy layer-based structures into approaches aligned with Atomic Design and Feature-Driven Architecture (FDA), improving project organization, component reusability, and long-term maintainability.",
+  "Contributed to establishing frontend development conventions including folder structure, component organization, naming consistency, and reusable coding practices to improve code quality and team-wide development consistency.",
+  "Collaborated closely with UX/UI designers to refine Figma designs, improve interaction flows, and transform design guidelines into responsive and scalable frontend components with strong focus on implementation feasibility and UI consistency.",
+  "Implemented complex data-heavy interfaces with dynamic validation flows, filtering, pagination, advanced table interactions, and optimized API synchronization for large-scale business operations.",
+  "Improved frontend performance and responsiveness through lazy loading, code splitting, memoization, render optimization, and temporary caching strategies for rarely updated master data, reducing unnecessary API requests and re-renders in complex management workflows.",
+  "Worked cross-functionally with backend engineers, QA teams, and product stakeholders to clarify requirements, align technical solutions, and deliver scalable product features within release timelines.",
+  "Designed real-time communication features using WebSocket for bidirectional updates and SSE for lightweight live data streaming scenarios.",
+];
+
+const _nexlab_responsibilities = [
+  "Developed and maintained frontend features for large-scale ERP systems covering Admin, POS, and CRM platforms, focusing on scalable UI architecture and reusable business components for enterprise workflows.",
+  "Built responsive and production-ready interfaces using Vue 2, Vue 3, and Quasar, integrating GraphQL APIs for complex data-driven management systems.",
+  "Implemented reusable UI patterns, shared business components, and modular frontend structures to improve maintainability and development consistency across multiple application modules.",
+  "Improved UI responsiveness and frontend performance through render optimization, efficient state handling, and component refactoring based on user behavior and customer feedback.",
+  "Served as one of the key frontend contributors in evaluating the technical impact of PO requirements, identifying implementation constraints and system conflicts, and proposing frontend solutions aligned with existing architecture and business workflows.",
+  "Participated in code reviews, technical discussions, and frontend implementation planning while contributing to maintainable development practices and reusable coding standards.",
+  "Mentored other junior developers and interns through code reviews, task guidance, debugging support, and knowledge sharing for frontend development best practices.",
+];
+
 export const experiences: ExperienceType[] = [
   {
     // projectName: "HRM",
     projectName: "247 Technology",
-    date: "01/02/2025 - now",
+    date: "03/02/2025 - now",
     description:
       "Shared design system, HRM modules, and data-heavy product UIs across multiple domains using Next.js and a component library aligned with design guidelines.",
     role: "Front-end Developer",
@@ -140,32 +163,9 @@ export const experiences: ExperienceType[] = [
     teches: "Next.js, TypeScript, shadcn/ui, Tailwind CSS",
     responsibilities: (
       <ul className="list-disc list-inside mt-2">
-        <li>
-          Contributed to building a shared Design System using Next.js and
-          shadcn/ui, developing reusable UI components to standardize design
-          patterns across multiple product domains and reduce UI inconsistency.
-        </li>
-        <li>
-          Collaborated closely with UX/UI designers to translate design
-          guidelines into scalable, reusable frontend components.
-        </li>
-        <li>
-          Developed and maintained HRM modules (employee management, payroll
-          workflows, reporting dashboards), focusing on clean architecture and
-          consistent UI patterns for internal operations.
-        </li>
-        <li>
-          Implemented complex, data-heavy and form-driven user interfaces,
-          integrating REST APIs with optimized data handling.
-        </li>
-        <li>
-          Worked cross-functionally with backend and product teams to deliver
-          features aligned with business and user requirements.
-        </li>
-        <li>
-          Designed and applied scalable frontend architecture using modular
-          structure and clear separation of concerns.
-        </li>
+        {_247_responsibilities.map((responsibility, index) => (
+          <li key={index}>{responsibility}</li>
+        ))}
       </ul>
     ),
     accomplishments:
@@ -209,7 +209,7 @@ export const experiences: ExperienceType[] = [
   {
     // projectName: "Enterprise ERP platforms",
     projectName: "Nexlab Technology",
-    icon: diva,
+    // icon: diva,
     date: "01/10/2022 - 30/06/2024",
     description:
       "Large-scale ERP systems covering Admin, POS, and CRM platforms with GraphQL-backed frontends.",
@@ -218,22 +218,9 @@ export const experiences: ExperienceType[] = [
     teches: "Vue2, Vue 3, Quasar, Element Plus, Pinia, GraphQL",
     responsibilities: (
       <ul className="list-disc list-inside mt-2">
-        <li>
-          Developed UI for large-scale ERP systems covering Admin, POS, and CRM
-          platforms.
-        </li>
-        <li>
-          Built and maintained frontend features using Vue2, Vue 3 and Quasar,
-          integrating APIs via GraphQL.
-        </li>
-        <li>
-          Improved UI performance and proposed solutions based on user and
-          customer feedback.
-        </li>
-        <li>
-          Mentored junior developers and interns through code reviews and task
-          guidance.
-        </li>
+        {_nexlab_responsibilities.map((responsibility, index) => (
+          <li key={index}>{responsibility}</li>
+        ))}
       </ul>
     ),
     accomplishments:
