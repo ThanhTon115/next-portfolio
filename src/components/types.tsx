@@ -5,15 +5,12 @@ import ExperienceIcon from "@image/experience.json";
 import MessageIcon from "@image/message.json";
 import {
   css,
-  diva,
   figma,
   git,
   html,
-  javascript,
   nextjs,
   reactjs,
   tailwind,
-  threejs,
   typescript,
   vuejs,
 } from "@image/index";
