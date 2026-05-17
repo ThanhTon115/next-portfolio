@@ -8,7 +8,11 @@ export default function About() {
       <h2 className="text-3xl text-center w-full font-bold">About me</h2>
       <h3 className="text-[--label] text-center w-full">My introduction</h3>
       <div className="flex flex-wrap mt-16 gap-16 justify-center items-start">
-        <Image className="about__img w-[300px]" src={Avatar} alt="avatar" />
+        <Image
+          className="about__img w-[300px]"
+          src={Avatar}
+          alt="avatar"
+        />
         <div className="about__info max-md:w-full md:max-w-[560px]  max-md:text-center">
           <div className="grid gap-4 grid-cols-2 mb-4">
             <div className="about__card border border-[--label] rounded-lg p-4 text-center">
